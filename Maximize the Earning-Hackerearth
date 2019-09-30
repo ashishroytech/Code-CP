@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long s,b,r,i,max;
+    cin>>s;
+    while(s--)
+    {
+        cin>>b>>r;
+        long long arr[b];
+        arr[0]=0.5;
+        for(i=1;i<=b;i++)
+        cin>>arr[i];
+        max=arr[0];
+        int flag=0;
+        for(i=1;i<=b;i++)
+        {
+            if(max<arr[i])
+            {
+                flag++;
+                max=arr[i];
+            }
+        }
+        cout<<flag*r<<endl;
+    }
+    return 0;
+}
