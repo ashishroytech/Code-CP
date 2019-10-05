@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+       unsigned long long int n,k;
+        cin>>n>>k;
+        unsigned long long int sum=0,ans;
+        while(1)
+        {
+            unsigned long long int empty= n%k;
+            unsigned long long int inter = n-empty;
+            unsigned long long int full =inter/k;
+            sum=sum+full;
+            ans=full+empty;
+            n=ans;
+            if(ans<k)
+            break;
+        }
+        cout<<sum<<endl;
+    }
+	return 0;
+}
