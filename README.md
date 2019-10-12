@@ -1,1 +1,1 @@
-# Code-CP
+# Competitive Programming - Solution 
