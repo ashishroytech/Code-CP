@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,temp=0;
+		cin>>n;
+		if(n<5)
+			cout<<temp<<endl;
+		else
+		{
+			while(n>=5)
+			{
+				temp=temp+floor(n/5);
+				n=floor(n/5);
+			}
+			cout<<temp<<endl;
+		}
+		
+	}
+	return 0;
+}
