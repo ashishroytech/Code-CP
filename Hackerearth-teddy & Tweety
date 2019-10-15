@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int temp=n/3;
+    if(n%3==0 && temp*3==n)
+    cout<<"YES"<<endl;
+    else
+    cout<<"NO"<<endl;
+    return 0;
+}
