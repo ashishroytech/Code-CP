@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,temp=0;
+	    cin>>n;
+		while(n>=5)
+	    {
+	        temp=temp+n/5;
+	        n=n/5;
+	    }
+	    cout<<temp<<endl;
+	}
+	
+	return 0;
+}
