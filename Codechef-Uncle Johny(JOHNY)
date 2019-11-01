@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int i,n,temp,k;
+		cin>>n;
+		long long arr[n];
+		for(i=0;i<n;i++)
+		cin>>arr[i];
+		cin>>k;
+		temp=arr[k-1];
+		sort(arr,arr+n);
+		for(i=0;i<n;i++)          //I have done linear search , in oder to rduce the TC Apply Binary Search.
+		{
+			if(arr[i]==temp)
+			{
+				cout<<i+1;
+				break;
+			}
+		}
+		cout<<endl;
+	}
+	return 0;
+}
